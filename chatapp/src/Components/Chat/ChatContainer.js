@@ -12,7 +12,7 @@ import {changeCurrentGroupToggleHandler} from "./ChatHomePage.js"
 
 
 let socket;
-let ENDPOINT = "http://localhost:4000/";
+let ENDPOINT = "https://chat-app-201901113.herokuapp.com/";
 
 const ChatContainer = ({currentGroup,user,getMessages,isMemberInGroup}) => {
 
