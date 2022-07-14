@@ -1,0 +1,524 @@
+.chatContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(134, 134, 134);
+}
+.chatPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.headerBtns{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chatBox{
+    height: 78vh;
+    /* width: 100%; */
+    min-width:100%;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns:  0.65fr  0.35fr;
+    background-color: #000000FF;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.groupContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    /* justify-content: center; */
+    min-width: 100%;
+    align-items: center;
+    padding: 2rem;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+    height: 78vh;
+}
+
+.groupHeading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.groupHeading >svg{
+    filter: brightness(100) invert();
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.groupHeading>svg:hover{
+    transform: scale(1.1);
+}
+
+.groupHeading >h1{
+    text-align: center;
+    /* width: 100%; */
+    font:400 2.2rem "Roboto";
+    /* border-bottom: 1px solid white; */
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.groupContainer>input{
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    font:400 0.9rem cursive;
+    outline: none;
+    margin: 1rem;
+}
+
+.groupBox{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    /* align-items: center; */
+}
+
+
+.logoutBtn{
+    margin-bottom: 3rem;
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    font:500 1.3rem "Gill Sans";
+    letter-spacing: 1.2px;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.2s;
+}
+
+.logoutBtn:hover{
+    transform: scale(1.03);
+}
+
+
+.chatUi{
+    /* background-color: antiquewhite; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 78vh;
+}
+
+
+.chatUiHeader{
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 10%;
+}
+
+.chatUiHeader> h1{
+    font:400 2.5rem "Gill Sans";
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+
+.chatUiHeader>img{
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    border-radius: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.chatUiHeader>img:hover{
+    transform: scale(1.2);
+}
+
+.chatPanel{
+    height: 80%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.inputBox{
+    border-top:1px solid white;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.chatSendBtn>img{
+    width: 2.4rem;
+    filter: brightness(100) invert();
+    box-sizing: border-box;
+    transition: all 0.3s;
+
+}
+
+.chatSendBtn{
+    width: 20%;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 0, 51);
+    cursor: pointer;
+    transition: all 0.5s;
+    border-left: 1px solid white;
+}
+
+.chatSendBtn:hover{
+    background-color: rgb(194, 0, 39);
+    transform: scale(1.01);
+}
+
+.chatSendBtn:hover img{
+    transform: translateX(0.9rem);
+    box-sizing: border-box;
+}
+
+
+#messageChat{
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    width: 80%;
+    box-sizing: border-box;
+    font:400 1rem cursive;
+    border: none;
+    outline: none;
+}
+
+.groupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+
+.groupForm >div
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+#groupImage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#groupImage > img{
+    width: 7rem;
+    height: 7rem;
+    border: solid 3px white;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#groupImage > input{
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+#groupImage > input::file-selector-button{
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    margin: 0%;
+    padding: 0 1rem;
+    z-index: 2;
+    font:400 0.9rem cursive;
+    transition: all 0.5s;
+    color: rgba(0,0,0,0.65);
+    border:none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#groupImage > input::file-selector-button:hover{
+    background-color: rgb(195, 195, 195);
+}
+
+.groupForm >div>input,
+.groupForm >div>textarea,
+.groupForm >div>select
+{
+    padding: 0.9rem 2.5rem;
+    padding-right: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    font:400 0.9rem cursive;
+    outline: none;
+}
+
+.groupForm >div>svg{
+    position: absolute;
+    transform: translateX(0.5rem);
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.65);
+}
+
+.groupSubmitBtn{
+    border: none;
+    background-color: crimson;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-weight:300;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    transition: all 0.5s;
+    margin-bottom: 1rem;
+}
+
+.groupSubmitBtn:hover{
+    background-color: rgb(190, 6, 43);
+}
+
+.groupInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+
+.groupInfo::-webkit-scrollbar{
+    overflow: scroll;
+}
+
+.groupInfo> h3{
+    align-self: flex-start;
+    color: darkgoldenrod;
+    font:400 1rem "Roboto";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.groupInfo> h4{
+    align-self: flex-start;
+    color: white;
+    font:400 1rem "Roboto";
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.groupInfo>h5{
+    color: green;
+    font:200 0.85rem "Roboto";
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+
+
+
+/* groupItem CSS */
+
+.groupItem{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content:space-between;
+    height: 10vh;
+    border-bottom: 1px solid rgba(150,150,150,0.25);
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.bgBlack{
+    background-color:black;
+    color: white;
+}
+
+
+.groupItem>img{
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 100%;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.groupItem >div>h1{
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+    font-family:Helvetica, sans-serif;
+}
+
+.bgBlack>div>h1{
+    font-size: large;
+}
+
+.groupItem >div>h5{
+    font-size: 0.65rem;
+    font-weight: 400;
+    font-family:Helvetica, sans-serif;
+}
+
+
+.groupItem:hover{
+    background-color:rgb(200, 200, 200) ;
+    border-color:rgb(0,0,0) ;
+}
+
+.bgBlack:hover{
+    background-color:rgb(39, 39, 39) ;
+    border-color:rgb(255, 255, 255) ;
+}
+
+.groupItem:hover img{
+    transform: scale(1.1);
+}
+
+.groupBtn{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.4rem;
+    min-width:5.5rem;
+    font:500 0.9rem "Gill Sans";
+    text-align: center;
+    letter-spacing: 1.1px;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.groupBtn:hover{
+    transform: scale(1.025);
+}
+
+.memberBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.memberBtn>button{
+    border: none;
+    outline: none;
+    margin: 0 0.2rem;
+    min-width: 4rem;
+    padding: 0.4rem 0.8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .chatContainer{
+        background-color: black;
+    }
+
+    .chatPage{
+        width: 100%;
+    }
+
+    .chatBox{
+        grid:none;
+        border: none;
+    }
+
+    .chatUiHeader{
+        border-top: 1px solid white;
+    }
+
+    .headerBtns{
+        padding: 1rem;
+    }
+
+    .logoutBtn{
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .chatUiHeader>h1{
+        font-size: 1.8rem;
+    }
+
+    .groupBtn{
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .groupContainer{
+        border: none;
+    }
+
+    .chatUiHeader>img{
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    .chatSendBtn:hover img{
+        transform: translateX(0rem);
+        box-sizing: border-box;
+    }
+
+}

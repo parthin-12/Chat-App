@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+
+.darkGolden{
+    background-color: darkgoldenrod;
+    color:white;
+}
+
+.red{
+    background-color: red;
+    color:white;
+}
+
+.red:hover{
+    background-color: rgb(188, 0, 0);
+}
+
+.green{
+    background-color: green;
+    color:white;
+}
+
+.green:hover{
+    background-color: rgb(0, 99, 0);
+}
+
+.lightGreen{
+    background-color: #00e100;
+    /* color:white; */
+}
+
+.lightGreen:hover{
+    background-color: #00bd00;
+}
+
+.golden{
+    background-color: gold;
+    color: black;
+}
+
+.gray{
+    background-color: gray;
+    color: white;
+}
