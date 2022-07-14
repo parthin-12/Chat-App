@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/index.js",
     "dev": "nodemon backend/index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend/chatapp && npm run build --prefix frontend/chatapp"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend --prefix chatapp && npm run build --prefix frontend --prefix chatapp"
   },
   "author": "",
   "license": "ISC",
