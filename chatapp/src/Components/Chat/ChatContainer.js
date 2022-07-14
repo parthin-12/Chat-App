@@ -76,7 +76,6 @@ const ChatContainer = ({currentGroup,user,getMessages,isMemberInGroup}) => {
         socket=SocketIO(ENDPOINT,{transports:['websocket']});
         socket.on("Received Message", messageFromBackEnd => {
 
-            // const isMember=currentGroup.members.find((e)=>String(e.user)===String(user._id));
           if(currentGroup._id===messageFromBackEnd.currentGroup && isMemberInGroup)
             setMessages([...messages,messageFromBackEnd]);
         })
